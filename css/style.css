@@ -51,3 +51,107 @@ body {
 .header__nav--item:last-child a {
     padding-right: 0;
 }
+
+/*sekcja main*/
+
+.main {
+    height: calc( 100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+.main__intro {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*sekcja main - kolumna z lewej strony - informacyjna*/
+
+.intro__info .info__small-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+.intro__info .info__title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.info__icons {
+    margin-top: 60px;
+    display: flex;
+}
+.info__icons .icons__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 150px;
+}
+
+.info__icons .icons__item:first-child {
+    margin-left: 0;
+}
+.info__icons .icons__item::before {
+    color: var(--accent-color);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.info__icons .icons__item:nth-child(1)::before {
+    content: "\f0c2";
+}
+.info__icons .icons__item:nth-child(2)::before {
+    content: "\f3d1";
+}
+.info__icons .icons__item:nth-child(3)::before {
+    content: "\f2f2";
+}
+.info__icons .icons__item .item__text {
+    font-weight: 600;
+}
+
+/*sekcja main - kolumna z prawej strony - formularz*/
+
+.intro__form {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+}
+.form__title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.intro__form form {
+    margin-top: 30px;
+}
+.intro__form .form__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.intro__form .form__field label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.intro__form .form__field input {
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 8px 0;
+}
+.intro__form .form__field input::placeholder {
+    opacity: 0.4;
+}
+.intro__form .form__button {
+    background-color: var(--accent-color);
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
